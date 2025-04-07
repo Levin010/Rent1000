@@ -31,7 +31,7 @@ const Map = () => {
       const marker = createPropertyMarker(property, map);
       const markerElement = marker.getElement();
       const path = markerElement.querySelector("path[fill='#3FB1CE']");
-      if (path) path.setAttribute("fill", "#000000");
+      if (path) path.setAttribute("fill", "#E53935");
     });
 
     const resizeMap = () => {
