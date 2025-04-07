@@ -19,7 +19,7 @@ const PropertyLocation = ({ propertyId }: PropertyDetailsProps) => {
 
     const map = new mapboxgl.Map({
       container: mapContainerRef.current!,
-      style: "mapbox://styles/majesticglue/cm6u301pq008b01sl7yk1cnvb",
+      style: "mapbox://styles/levdev/cm96p073100ci01qyg2zh0n28",
       center: [
         property.location.coordinates.longitude,
         property.location.coordinates.latitude,
@@ -36,7 +36,7 @@ const PropertyLocation = ({ propertyId }: PropertyDetailsProps) => {
 
     const markerElement = marker.getElement();
     const path = markerElement.querySelector("path[fill='#3FB1CE']");
-    if (path) path.setAttribute("fill", "#000000");
+    if (path) path.setAttribute("fill", "#E53935");
 
     return () => map.remove();
   }, [property, isError, isLoading]);
